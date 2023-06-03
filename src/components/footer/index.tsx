@@ -2,7 +2,7 @@ import React from "react";
 import FooterStyles from "./footer.module.scss";
 import { GiLifeBuoy } from "react-icons/gi";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className={FooterStyles.footer}>
       <div className={FooterStyles.grid}>

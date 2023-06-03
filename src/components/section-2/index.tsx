@@ -3,7 +3,7 @@ import Section2Styles from "./section-2.module.scss";
 import Asterisk from "../../assets/icons/Asterisk";
 import Person1Img from "../../assets/images/person1.jpg";
 
-const Section2 = () => {
+const Section2: React.FC = () => {
   return (
     <div className={Section2Styles.section2}>
       <div className={Section2Styles.expert}>

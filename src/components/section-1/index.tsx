@@ -6,7 +6,7 @@ import HouseImg from "../../assets/images/house.jpg";
 import VehicleImg from "../../assets/images/vehicle.jpg";
 import lifeBouyImg from "../../assets/images/lifebouy.jpg";
 
-const Section1 = () => {
+const Section1: React.FC = () => {
   return (
     <div className={Section1Styles.section1}>
       <div className={Section1Styles.grid1}>

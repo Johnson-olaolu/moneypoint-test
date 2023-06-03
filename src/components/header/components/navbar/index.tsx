@@ -4,7 +4,7 @@ import { RiKey2Fill } from "react-icons/ri";
 import { FaChevronDown } from "react-icons/fa";
 import NavbarStyles from "./navbar.module.scss";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <div className={NavbarStyles.navbar}>
       <GiLifeBuoy size={48} className={NavbarStyles.lifebouy} />

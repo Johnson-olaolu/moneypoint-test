@@ -4,7 +4,7 @@ import Navbar from "./components/navbar";
 import Asterisk from "../../assets/icons/Asterisk";
 import HeaderImg from "../../assets/images/kyle-hinkson-xyXcGADvAwE-unsplash.jpg";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <div className={HeaderStyles.header}>
       <Navbar />

@@ -3,7 +3,7 @@ import Section3Styles from "./section-3.module.scss";
 import Asterisk from "../../assets/icons/Asterisk";
 import FamilyImg from "../../assets/images/family.jpg";
 
-const Section3 = () => {
+const Section3: React.FC = () => {
   return (
     <div className={Section3Styles.section3}>
       <div className={Section3Styles.supportText}>
