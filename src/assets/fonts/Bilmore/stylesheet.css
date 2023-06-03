@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Blimone Regular Inktrap";
+  src: url("Blimone-RegularInktrap.eot");
+  src: local("Blimone Regular Inktrap"), local("Blimone-RegularInktrap"), url("Blimone-RegularInktrap.eot?#iefix") format("embedded-opentype"),
+    url("Blimone-RegularInktrap.woff2") format("woff2"), url("Blimone-RegularInktrap.woff") format("woff"),
+    url("Blimone-RegularInktrap.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blimone Medium Inktrap";
+  src: url("Blimone-MediumInktrap.eot");
+  src: local("Blimone Medium Inktrap"), local("Blimone-MediumInktrap"), url("Blimone-MediumInktrap.eot?#iefix") format("embedded-opentype"),
+    url("Blimone-MediumInktrap.woff2") format("woff2"), url("Blimone-MediumInktrap.woff") format("woff"),
+    url("Blimone-MediumInktrap.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blimone ExtraLight Inktrap";
+  src: url("Blimone-ExtraLightInktrap.eot");
+  src: local("Blimone ExtraLight Inktrap"), local("Blimone-ExtraLightInktrap"),
+    url("Blimone-ExtraLightInktrap.eot?#iefix") format("embedded-opentype"), url("Blimone-ExtraLightInktrap.woff2") format("woff2"),
+    url("Blimone-ExtraLightInktrap.woff") format("woff"), url("Blimone-ExtraLightInktrap.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blimone ExtraBold Inktrap";
+  src: url("Blimone-ExtraBoldInktrap.eot");
+  src: local("Blimone ExtraBold Inktrap"), local("Blimone-ExtraBoldInktrap"), url("Blimone-ExtraBoldInktrap.eot?#iefix") format("embedded-opentype"),
+    url("Blimone-ExtraBoldInktrap.woff2") format("woff2"), url("Blimone-ExtraBoldInktrap.woff") format("woff"),
+    url("Blimone-ExtraBoldInktrap.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blimone Light Inktrap";
+  src: url("Blimone-LightInktrap.eot");
+  src: local("Blimone Light Inktrap"), local("Blimone-LightInktrap"), url("Blimone-LightInktrap.eot?#iefix") format("embedded-opentype"),
+    url("Blimone-LightInktrap.woff2") format("woff2"), url("Blimone-LightInktrap.woff") format("woff"),
+    url("Blimone-LightInktrap.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blimone SemiBold Inktrap";
+  src: url("Blimone-SemiBoldInktrap.eot");
+  src: local("Blimone SemiBold Inktrap"), local("Blimone-SemiBoldInktrap"), url("Blimone-SemiBoldInktrap.eot?#iefix") format("embedded-opentype"),
+    url("Blimone-SemiBoldInktrap.woff2") format("woff2"), url("Blimone-SemiBoldInktrap.woff") format("woff"),
+    url("Blimone-SemiBoldInktrap.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blimone Bold Inktrap";
+  src: url("Blimone-BoldInktrap.eot");
+  src: local("Blimone Bold Inktrap"), local("Blimone-BoldInktrap"), url("Blimone-BoldInktrap.eot?#iefix") format("embedded-opentype"),
+    url("Blimone-BoldInktrap.woff2") format("woff2"), url("Blimone-BoldInktrap.woff") format("woff"),
+    url("Blimone-BoldInktrap.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blimone Thin Inktrap";
+  src: url("Blimone-ThinInktrap.eot");
+  src: local("Blimone Thin Inktrap"), local("Blimone-ThinInktrap"), url("Blimone-ThinInktrap.eot?#iefix") format("embedded-opentype"),
+    url("Blimone-ThinInktrap.woff2") format("woff2"), url("Blimone-ThinInktrap.woff") format("woff"),
+    url("Blimone-ThinInktrap.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}

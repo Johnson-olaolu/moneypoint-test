@@ -1,0 +1,88 @@
+.section1 {
+  margin-top: 180px;
+  display: grid;
+  gap: 40px;
+  padding: 0 60px;
+  .grid1 {
+    display: flex;
+    .cardHomeInsurance {
+      height: 420px;
+      width: 50%;
+      border-radius: 60px;
+      position: relative;
+      background-size: 100% auto;
+      flex-shrink: 0;
+      .cardInfoText {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background: #0b0f17;
+        color: #e1dddd;
+        padding: 0 40px;
+        border-radius: 100000px;
+        font-weight: 600;
+      }
+    }
+    .cardImgPlaceholder {
+      margin: 0 24px;
+      width: 200px;
+      border-radius: 100000px;
+      flex-shrink: 0;
+      background-size: auto 100%;
+    }
+    .viewServices {
+      background-color: #0f1d30;
+      padding: 40px;
+      border-radius: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .viewServicesInfo {
+        .viewServicesTitle {
+          font-family: "Blimone Bold Inktrap";
+          font-size: 52px;
+          color: #e1dddd;
+          line-height: 1;
+        }
+        .viewServicesBody {
+          margin-top: 24px;
+          color: #e1dddd;
+          font-size: 14px;
+        }
+      }
+      .viewServicesButton {
+        height: 60px;
+        background-color: #ff5476;
+        border-radius: 10000px;
+        border: none;
+      }
+    }
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    & > div {
+      height: 260px;
+      border-radius: 60px;
+      position: relative;
+      background-size: 100% 100%;
+      .cardInfoText {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background: #0b0f17;
+        color: #e1dddd;
+        padding: 0 40px;
+        border-radius: 100000px;
+        font-weight: 600;
+      }
+    }
+  }
+}

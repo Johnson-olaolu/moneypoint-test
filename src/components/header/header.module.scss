@@ -1,0 +1,97 @@
+.header {
+  padding: 60px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  background-color: #1f283d;
+  background: linear-gradient(180deg, rgba(31, 40, 61, 0.4) 0%, rgba(11, 15, 23, 0) 35%, rgba(11, 15, 23, 0) 100%);
+
+  .jumbotron {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .jumbotron_section_1 {
+      .main_text {
+        color: #e3dede;
+        font-family: "Blimone Bold Inktrap";
+        font-size: 160px;
+        line-height: 1;
+      }
+    }
+    .jumbotron_section_2 {
+      padding-left: 80px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 72px;
+      .points {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 40px;
+        .single_point {
+          .custom_bullet {
+            height: 40px;
+            width: 40px;
+            background-color: #e3dede;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 40px;
+            svg {
+              transform: scale(0.8);
+            }
+          }
+          p {
+            margin-top: 24px;
+            color: #b7b6ba;
+            padding-right: 20px;
+            a {
+              color: #84d7e9;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .point_down {
+        height: 128px;
+        width: 48px;
+        background: linear-gradient(0deg, rgba(31, 40, 61, 0.5) 0%, rgba(11, 15, 23, 0) 90%, rgba(11, 15, 23, 0) 100%);
+        border-radius: 100000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .long_arrow {
+          height: 60px;
+          width: 2px;
+          background-color: #c1c3c9;
+          position: relative;
+          border-radius: 10000px;
+          &::after {
+            content: "";
+            height: 8px;
+            width: 2px;
+            position: absolute;
+            bottom: 2.5px;
+            transform: rotate(45deg) translateX(4.5px);
+            background-color: #c1c3c9;
+            border-radius: 10000px;
+          }
+          &::before {
+            content: "";
+            height: 8px;
+            width: 2px;
+            position: absolute;
+            bottom: 2.5px;
+            transform: rotate(-45deg) translateX(-4px);
+            background-color: #c1c3c9;
+            border-radius: 10000px;
+          }
+        }
+      }
+      .image {
+        border-radius: 10000px;
+        background-position: bottom right;
+        box-sizing: 100% 100%;
+      }
+    }
+  }
+}

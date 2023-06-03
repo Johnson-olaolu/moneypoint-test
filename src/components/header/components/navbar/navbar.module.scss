@@ -1,0 +1,55 @@
+.navbar {
+  color: white;
+  display: flex;
+  gap: 182px;
+  align-items: center;
+  .lifebouy {
+    color: #ff5476;
+  }
+
+  .menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      gap: 48px;
+      align-items: center;
+      list-style: none;
+      li {
+        color: #7c8690;
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        gap: 8px;
+        &.active {
+          color: white;
+        }
+      }
+    }
+    .button_menu {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      .contact_us {
+        height: 60px;
+        width: 208px;
+        background-color: #84d7e9;
+        border-radius: 10000px;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .login {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        gap: 12px;
+        background-color: transparent;
+        color: white;
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.footer {
+  margin-top: 80px;
+  padding: 0 60px;
+  padding-bottom: 60px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  background-color: #1f283d;
+  background: linear-gradient(0deg, rgba(31, 40, 61, 0.4) 0%, rgba(11, 15, 23, 0) 35%, rgba(11, 15, 23, 0) 100%);
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .gridSection1 {
+      width: 484px;
+      h4 {
+        color: #e3dede;
+        font-family: "Blimone Bold Inktrap";
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 48px;
+      }
+      .categories {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 36px;
+        & > span {
+          height: 36px;
+          display: flex;
+          padding: 0 20px;
+          border-radius: 100000px;
+          background-color: #131a28;
+          color: #e3dede;
+          align-items: center;
+          font-size: 14px;
+          &.categoryActive {
+            background-color: #e3dede;
+            color: #131a28;
+          }
+        }
+      }
+      .form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 36px;
+        .formControl {
+          label {
+            color: #e3dede;
+            font-size: 12px;
+            margin-bottom: 8px;
+            display: block;
+          }
+          input {
+            height: 48px;
+            width: 100%;
+            border-radius: 1000000px;
+            border: none;
+            padding: 0 20px;
+            font-size: 14px;
+            background-color: #1e283d;
+          }
+        }
+      }
+      .button {
+        width: 100%;
+        border: none;
+        height: 60px;
+        border-radius: 10000px;
+        background-color: #ff5476;
+        color: #e3dede;
+        font-size: 16px;
+      }
+    }
+    .gridSection2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 52px;
+      .menu {
+        width: 356px;
+        h6 {
+          color: #e3dede;
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 12px;
+        }
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+          gap: 8px 24px;
+          li {
+            font-size: 14px;
+            color: #e3dede;
+            opacity: 0.5;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .footerInner {
+    padding: 0;
+    margin-top: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: #e3dede;
+      p {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+    a {
+      font-size: 14px;
+      color: #e3dede;
+    }
+  }
+}

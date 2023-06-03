@@ -1,0 +1,96 @@
+.section2 {
+  display: flex;
+  gap: 80px;
+  margin-top: 80px;
+  padding: 0 60px;
+  align-items: center;
+  .expert {
+    width: 820px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    flex-shrink: 0;
+    .expertSection {
+      padding: 48px 80px;
+      width: 100%;
+      background-color: #0f1d30;
+      border-radius: 60px;
+      display: flex;
+      gap: 68px;
+      .expertImg {
+        width: 212px;
+        height: 428px;
+        border-radius: 10000px;
+        background-size: auto 100%;
+        background-position: center;
+        flex-shrink: 0;
+      }
+      .expertInfo {
+        max-width: 340px;
+        .expertName {
+          color: #e1dddd;
+          font-size: 36px;
+          font-weight: 600;
+          margin-bottom: 4px;
+        }
+        .expertTitle {
+          color: #303f57;
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+        .expertText {
+          font-size: 16px;
+          font-weight: 400;
+          color: #e1dddd;
+          opacity: 0.5;
+          margin-bottom: 60px;
+        }
+        .expertButton {
+          height: 60px;
+          width: 100%;
+          border: none;
+          border-radius: 100000px;
+          background-color: #84d7e9;
+        }
+      }
+    }
+    .pagination {
+      display: flex;
+      gap: 20px;
+      div {
+        width: 16px;
+        height: 16px;
+        border-radius: 100000px;
+        background-color: #e3dede;
+      }
+    }
+  }
+  .info {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding-bottom: 54px;
+    .custom_bullet {
+      height: 40px;
+      width: 40px;
+      background-color: #e3dede;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 40px;
+      flex-shrink: 0;
+      svg {
+        transform: scale(0.8);
+      }
+    }
+    span {
+      font-size: 80px;
+      color: #e3dede;
+      font-family: "Blimone Bold Inktrap";
+      line-height: 1;
+      margin-top: -8px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  padding: 0 60px;
+  .supportText {
+    width: 260px;
+    p {
+      font-size: 80px;
+      color: #e3dede;
+      font-family: "Blimone Bold Inktrap";
+      line-height: 1;
+      span {
+        font-size: 140px;
+        font-family: "Blimone Bold Inktrap";
+      }
+    }
+  }
+  .bulletPoints {
+    width: 372px;
+    .points {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      margin-bottom: 28px;
+      .single_point {
+        .custom_bullet {
+          height: 40px;
+          width: 40px;
+          background-color: #e3dede;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 40px;
+          svg {
+            transform: scale(0.8);
+          }
+        }
+        p {
+          margin-top: 24px;
+          color: #b7b6ba;
+          a {
+            color: #84d7e9;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .button {
+      width: 340px;
+      height: 60px;
+      border: solid 1px #ff5476;
+      border-radius: 100000px;
+      color: #ff5476;
+      background: none;
+    }
+  }
+
+  .image {
+    height: 584px;
+    width: 312px;
+    border-radius: 100000px;
+    background-size: auto 100%;
+    background-position: center;
+  }
+}
