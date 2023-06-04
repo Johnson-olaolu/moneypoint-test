@@ -1,8 +1,8 @@
 .section1 {
-  margin-top: 180px;
   display: grid;
   gap: 40px;
   padding: 0 60px;
+  margin-top: 180px;
   .grid1 {
     display: flex;
     .cardHomeInsurance {
@@ -32,6 +32,8 @@
       border-radius: 100000px;
       flex-shrink: 0;
       background-size: auto 100%;
+      --clip: 0% at 50% 100%;
+      clip-path: circle(var(--clip));
     }
     .viewServices {
       background-color: #0f1d30;
@@ -58,6 +60,7 @@
         background-color: #ff5476;
         border-radius: 10000px;
         border: none;
+        font-size: 16px;
       }
     }
   }

@@ -2,7 +2,7 @@
   padding: 60px;
   border-top-left-radius: 80px;
   border-top-right-radius: 80px;
-  background-color: #1f283d;
+  // background-color: #1f283d;
   background: linear-gradient(180deg, rgba(31, 40, 61, 0.4) 0%, rgba(11, 15, 23, 0) 35%, rgba(11, 15, 23, 0) 100%);
 
   .jumbotron {
@@ -11,10 +11,13 @@
     grid-template-columns: repeat(2, 1fr);
     .jumbotron_section_1 {
       .main_text {
-        color: #e3dede;
-        font-family: "Blimone Bold Inktrap";
-        font-size: 160px;
-        line-height: 1;
+        span {
+          color: #e3dede;
+          font-family: "Blimone Bold Inktrap";
+          font-size: 160px;
+          line-height: 1;
+          display: block;
+        }
       }
     }
     .jumbotron_section_2 {
@@ -38,6 +41,15 @@
             border-radius: 40px;
             svg {
               transform: scale(0.8);
+              animation: spin 20s infinite linear;
+              @keyframes spin {
+                from {
+                  transform: scale(0.8) rotate(0deg);
+                }
+                to {
+                  transform: scale(0.8) rotate(360deg);
+                }
+              }
             }
           }
           p {
@@ -91,6 +103,8 @@
         border-radius: 10000px;
         background-position: bottom right;
         box-sizing: 100% 100%;
+        --clip: 0% at 50% 100%;
+        clip-path: circle(var(--clip));
       }
     }
   }

@@ -7,13 +7,16 @@
   .supportText {
     width: 260px;
     p {
-      font-size: 80px;
-      color: #e3dede;
-      font-family: "Blimone Bold Inktrap";
-      line-height: 1;
       span {
-        font-size: 140px;
+        font-size: 80px;
+        display: block;
+        color: #e3dede;
         font-family: "Blimone Bold Inktrap";
+        line-height: 1;
+        &.largeText {
+          font-size: 140px;
+          font-family: "Blimone Bold Inktrap";
+        }
       }
     }
   }
@@ -35,6 +38,15 @@
           border-radius: 40px;
           svg {
             transform: scale(0.8);
+            animation: spin 20s infinite linear;
+            @keyframes spin {
+              from {
+                transform: scale(0.8) rotate(0deg);
+              }
+              to {
+                transform: scale(0.8) rotate(360deg);
+              }
+            }
           }
         }
         p {
@@ -63,5 +75,7 @@
     border-radius: 100000px;
     background-size: auto 100%;
     background-position: center;
+    --clip: 0% at 50% 100%;
+    clip-path: circle(var(--clip));
   }
 }
