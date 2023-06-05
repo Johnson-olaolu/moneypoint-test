@@ -1,10 +1,46 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import Section2Styles from "./section-2.module.scss";
 import Asterisk from "../../assets/icons/Asterisk";
-import Person1Img from "../../assets/images/person1.jpg";
 import { gsap } from "gsap";
+import Image1 from "../../assets/images/person1.jpg";
+import Image2 from "../../assets/images/person2.jpg";
+import ExpertCard from "./components/expert-card";
+
+const experts = [
+  {
+    name: "George Darcy",
+    title: "The agency founder ",
+    image: Image1,
+    text: `With over twenty years of industry experience, 'Darcy's insurance products' has learned a lot. the one things we know for sure is that we're all about you. If you find searching for insurance fustrating we are here to help`,
+  },
+  {
+    name: "George Darcy",
+    title: "The agency founder ",
+    image: Image2,
+    text: `With over twenty years of industry experience, 'Darcy's insurance products' has learned a lot. the one things we know for sure is that we're all about you. If you find searching for insurance fustrating we are here to help`,
+  },
+  {
+    name: "George Darcy",
+    title: "The agency founder ",
+    image: Image1,
+    text: `With over twenty years of industry experience, 'Darcy's insurance products' has learned a lot. the one things we know for sure is that we're all about you. If you find searching for insurance fustrating we are here to help`,
+  },
+  {
+    name: "George Darcy",
+    title: "The agency founder ",
+    image: Image2,
+    text: `With over twenty years of industry experience, 'Darcy's insurance products' has learned a lot. the one things we know for sure is that we're all about you. If you find searching for insurance fustrating we are here to help`,
+  },
+  {
+    name: "George Darcy",
+    title: "The agency founder ",
+    image: Image1,
+    text: `With over twenty years of industry experience, 'Darcy's insurance products' has learned a lot. the one things we know for sure is that we're all about you. If you find searching for insurance fustrating we are here to help`,
+  },
+];
 
 const Section2: React.FC = () => {
+  const [activeExpert, setActiveExpert] = useState(0);
   const section2Ref = useRef<HTMLDivElement>(null);
   const section2WrapperRef = useRef<HTMLDivElement>(null);
   const section2Info1Ref = useRef<HTMLSpanElement>(null);
@@ -54,33 +90,24 @@ const Section2: React.FC = () => {
 
     return () => ctx.revert();
   }, []);
+
   return (
     <div ref={section2Ref} className="">
       <div ref={section2WrapperRef} className={Section2Styles.section2}>
         <div className={Section2Styles.expert}>
-          <div className={Section2Styles.expertSection}>
-            <div
-              className={Section2Styles.expertImg}
-              style={{
-                backgroundImage: `url(${Person1Img})`,
-              }}
-            ></div>
-            <div className={Section2Styles.expertInfo}>
-              <h4 className={Section2Styles.expertName}>George Darcy</h4>
-              <h6 className={Section2Styles.expertTitle}>The agency founder</h6>
-              <p className={Section2Styles.expertText}>
-                With over twenty years of industry experience, 'Darcy's insurance products' has learned a lot. the one things we know for sure is that
-                we're all about you. If you find searching for insurance fustrating we are here to help
-              </p>
-              <button className={Section2Styles.expertButton}>Get a consultation</button>
-            </div>
-          </div>
+          <ExpertCard
+            image={experts[activeExpert].image}
+            text={experts[activeExpert].text}
+            name={experts[activeExpert].name}
+            title={experts[activeExpert].title}
+            sectionRef={section2Ref}
+          />
           <div className={Section2Styles.pagination}>
-            <div className={Section2Styles.dot}></div>
-            <div className={Section2Styles.activeDot}></div>
-            <div className={Section2Styles.dot}></div>
-            <div className={Section2Styles.dot}></div>
-            <div className={Section2Styles.dot}></div>
+            <div onClick={() => setActiveExpert(0)} className={activeExpert === 0 ? Section2Styles.activeDot : Section2Styles.dot}></div>
+            <div onClick={() => setActiveExpert(1)} className={activeExpert === 1 ? Section2Styles.activeDot : Section2Styles.dot}></div>
+            <div onClick={() => setActiveExpert(2)} className={activeExpert === 2 ? Section2Styles.activeDot : Section2Styles.dot}></div>
+            <div onClick={() => setActiveExpert(3)} className={activeExpert === 3 ? Section2Styles.activeDot : Section2Styles.dot}></div>
+            <div onClick={() => setActiveExpert(4)} className={activeExpert === 4 ? Section2Styles.activeDot : Section2Styles.dot}></div>
           </div>
         </div>
         <div className={Section2Styles.info}>

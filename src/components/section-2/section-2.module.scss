@@ -25,6 +25,8 @@
         background-size: auto 100%;
         background-position: center;
         flex-shrink: 0;
+        --clip: 0% at 50% 100%;
+        clip-path: circle(var(--clip));
       }
       .expertInfo {
         max-width: 340px;
@@ -64,6 +66,11 @@
         height: 16px;
         border-radius: 100000px;
         background-color: #e3dede;
+        opacity: 0.5;
+        cursor: pointer;
+        &.activeDot {
+          opacity: 1;
+        }
       }
     }
   }
