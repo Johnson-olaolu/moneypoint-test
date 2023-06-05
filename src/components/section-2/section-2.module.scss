@@ -83,6 +83,15 @@
       flex-shrink: 0;
       svg {
         transform: scale(0.8);
+        animation: spin 20s infinite linear;
+        @keyframes spin {
+          from {
+            transform: scale(0.8) rotate(0deg);
+          }
+          to {
+            transform: scale(0.8) rotate(360deg);
+          }
+        }
       }
     }
     span {
@@ -91,6 +100,7 @@
       font-family: "Blimone Bold Inktrap";
       line-height: 1;
       margin-top: -8px;
+      display: block;
     }
   }
 }

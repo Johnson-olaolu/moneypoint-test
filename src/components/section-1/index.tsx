@@ -107,17 +107,6 @@ const Section1: React.FC = () => {
           start: "top center",
         },
       });
-
-      // gsap.to(section1Ref.current, {
-      //   x: 100,
-      //   duration: 2,
-      //   ease: "bounce",
-      //   delay: 1,
-      //   scrollTrigger: {
-      //     trigger: section1Ref.current,
-      //     markers: true,
-      //   },
-      // });
     });
 
     return () => ctx.revert();
